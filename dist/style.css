@@ -15,18 +15,18 @@ body {
 
 .container {
   display: flex;
-  width: 90vw;
+  width: 95vw;
 }
 .container .panel {
   background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
-  border-radius: 50px;
+  height: 95vh;
+  border-radius: 20px;
   color: #fff;
   cursor: pointer;
   flex: 0.5;
-  margin: 10px;
+  margin: 3px;
   position: relative;
   transition: flex 0.7s ease-in;
 }
@@ -37,6 +37,10 @@ body {
   left: 20px;
   margin: 0;
   opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3px 10px;
+  border-radius: 8px;
+  color: #dfdfdf;
 }
 .container .panel.active {
   flex: 5;
@@ -51,6 +55,14 @@ body {
     width: 100vw;
   }
   .container .panel:nth-of-type(4), .container .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+@media (max-width: 380px) {
+  .container {
+    width: 90vw;
+  }
+  .container .panel:nth-of-type(3), .container .panel:nth-of-type(4), .container .panel:nth-of-type(5) {
     display: none;
   }
 }
