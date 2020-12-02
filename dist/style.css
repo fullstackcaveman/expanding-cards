@@ -11,6 +11,7 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background: #222222;
 }
 
 .container {
@@ -23,6 +24,7 @@ body {
   background-repeat: no-repeat;
   height: 95vh;
   border-radius: 20px;
+  opacity: 0.6;
   color: #fff;
   cursor: pointer;
   flex: 0.5;
@@ -44,6 +46,7 @@ body {
 }
 .container .panel.active {
   flex: 5;
+  opacity: 1;
 }
 .container .panel.active h3 {
   opacity: 1;

@@ -12,6 +12,7 @@ body {
 	height: 100vh;
 	overflow: hidden;
 	margin: 0;
+	background: rgb(34, 34, 34);
 }
 
 .container {
@@ -24,6 +25,7 @@ body {
 		background-repeat: no-repeat;
 		height: 95vh;
 		border-radius: 20px;
+		opacity: 0.6;
 		color: #fff;
 		cursor: pointer;
 		flex: 0.5;
@@ -46,6 +48,7 @@ body {
 
 		&.active {
 			flex: 5;
+			opacity: 1;
 
 			h3 {
 				opacity: 1;
